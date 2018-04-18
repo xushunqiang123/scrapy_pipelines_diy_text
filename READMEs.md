@@ -8,13 +8,15 @@ scrapy框架自定pipelines练习
 	更改settings设置
 	首先放开# Obey robots.txt rules   #曾经面试考官问怎么看待这个协议，四个字 “盗亦有道”
 			ROBOTSTXT_OBEY = False
+			
 	可以设置相关request_headers
+	
 	DEFAULT_REQUEST_HEADERS = {
         "Accept":" text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
         "Accept-Language":" zh-CN,zh;q=0.9",
         "Cache-Control":" max-age=0",
         "Connection":" keep-alive",
-        "Cookie":" _free_proxy_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZkOTk1OTcwNjU4MDQwNGVkYjg2NGYxMmZmY2UyYmQ5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMS9oc25BL1ZzdjBEalhyemZTbitjYVRvTlg5cExWSG53UUNRUzBsajJYUE09BjsARg%3D%3D--2568f58683b3ec574fc6d39d86602f6e86399c92; Hm_lvt_0cf76c77469e965d2957f0553e6ecf59=1524014009,1524014045; Hm_lpvt_0cf76c77469e965d2957f0553e6ecf59=1524014045",
+        		"Cookie":"_free_proxy_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZkOTk1OTcwNjU4MDQwNGVkYjg2NGYxMmZmY2UyYmQ5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMS9oc25BL1ZzdjBEalhyemZTbitjYVRvTlg5cExWSG53UUNRUzBsajJYUE09BjsARg%3D%3D--2568f58683b3ec574fc6d39d86602f6e86399c92; Hm_lvt_0cf76c77469e965d2957f0553e6ecf59=1524014009,1524014045; Hm_lpvt_0cf76c77469e965d2957f0553e6ecf59=1524014045",
         "Host":" www.xicidaili.com",
         "If-None-Match":' W/"096659f7645840d2c00b426aa9022adb"',
         # "Referer":" https://www.baidu.com/link?url=JuAmxoxL6MmvbvDR6NnHc-1ncZjgrSe8GaFnfswwoJSlGxjRasYxRXua86_lH-A1&wd=&eqid=aac7950900045e32000000055ad69bb2",
